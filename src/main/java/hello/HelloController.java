@@ -15,7 +15,12 @@ public class HelloController {
 
     @GetMapping("/number")
     public String number(@RequestParam String value) {
-        return "Value: " + value;////
+        return "Value: " + value;
+    }
+
+    @GetMapping("/info")
+    public String info() {
+        return "1.0 ver";
     }
 
 }
